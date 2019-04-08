@@ -7,7 +7,9 @@
       <title>Wikipedia Searcher</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
       <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
       <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -17,12 +19,13 @@
           <div class="row">
             <div class="col-12">
               <!--<a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" id="wiki-random" class="btn btn-primary"</a>-->
-              <button type="button" id="random-wiki" class="btn btn-primary btn-lg" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random')">Get Random Wikipedia Entry!</button>
+              <button type="button" id="random-wiki" class="btn btn-custom btn-lg" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random')">Click here for a random article!</button>
             </div>
           </div>
           <div class="row"><!-- id="wiki-box">-->
             <div id="search-main" class="col-12">
-              <img id="search-icon" class="img-fluid" src="http://www.freeiconspng.com/uploads/search-icon-png-21.png" alt="Search Icon">
+              <!--<img id="search-icon" class="img-fluid" src="http://www.freeiconspng.com/uploads/search-icon-png-21.png" alt="Search Icon">-->
+              <i id="search-icon" class="fas fa-search"></i>
               <h3>Click icon to search Wikipedia!</h3>
             </div>
           </div>
@@ -30,7 +33,7 @@
             <div id="search-text" class="col-12">
               <div id="search-box" class="btn-group">
                 <input id="search-item" type="search" class="form-control">
-                <i id="search-clear" class="fa fa-times-circle-o" aria-hidden="true"></i>
+                <i id="search-clear" class="fas fa-times" aria-hidden="true"></i>
                 <!--<span id="search-clear" class="glyphicon glyphicon-remove-circle"></span>-->
               </div>
               <!--<form class="form-inline" id="search-box">-->
@@ -38,7 +41,7 @@
                 <!--<input class="form-control" id="search-item">-->
               <!--</div>
               <div class="col-4">-->
-              <button type="button" id="submit" class="btn btn-primary">Submit</button>
+              <button type="button" id="submit" class="btn btn-custom">Submit</button>
               <!--</div>-->
             <!--</form>-->
             </div>

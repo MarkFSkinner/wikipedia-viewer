@@ -1,8 +1,18 @@
 body {
-  background-color: #1b95e0; }
+  background-color: #078898;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+
+.btn-custom {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background-color: #E37222;
+  color: #fff;
+  border-radius: 0rem; }
+
+.btn-custom:hover {
+  background-color: #EEAA7B;
+  cursor: pointer; }
 
 .container {
-  background-color: #fff;
   margin-top: 1.875rem;
   margin-bottom: 1.875rem;
   max-width: 100%;
@@ -10,7 +20,7 @@ body {
   height: 100%;*/ }
 
 #wiki-container {
-  border: 0.125rem solid #1b95e0;
+  border: 0.125rem solid #078898;
   border-radius: 5px;
   width: 90%;
   height: 90%;
@@ -22,13 +32,16 @@ body {
   padding: 0.625rem; }
 
 h1 {
-  color: #1b95e0;
+  color: #078898;
   font-size: 3.5rem; }
 
 h3 {
-  font-size: 2rem;
-  margin-top: 1.875rem;
-  margin-bottom: 1.875rem; }
+  font-size: 1.25rem;
+  margin-bottom: 1.875rem;
+  color: #f2f2f2; }
+
+h4 {
+  font-weight: bold; }
 
 h4, p {
   text-align: left; }
@@ -45,16 +58,22 @@ h4, p {
   display: none; }
 
 #search-icon {
-  max-width: 6.25rem;
-  margin: auto;
+  font-size: 6rem;
+  color: #E37222;
+  /*border: 1px solid red;*/
+  margin-bottom: 3.5rem; }
+
+#search-icon:hover {
+  font-size: 6.5rem;
   cursor: pointer;
-  /*border: 1px solid red;*/ }
+  margin-bottom: 3rem; }
 
 @media screen and (max-width: 360px) {
   #search-box {
     margin-bottom: 10px; } }
 #search-item {
-  margin-right: 0.3125rem; }
+  margin-right: 0.3125rem;
+  color: #404040; }
 
 #search-clear {
   font-size: 0.875rem;
@@ -65,11 +84,21 @@ h4, p {
   top: 0;
   bottom: 0;
   height: 0.875rem;
-  margin: auto; }
+  margin: auto;
+  padding-right: 5px; }
 
 .results {
-  border: 0.0625rem solid #1b95e0;
-  margin-top: 0.3125rem; }
+  margin-top: 0.3125rem;
+  background-color: #f2f2f2;
+  color: #404040;
+  padding: 1.5rem 2rem 1rem 2rem; }
+
+.results:hover {
+  border: 0.25rem solid #E37222;
+  padding: 1.25rem 1.75rem 0.75rem 1.75rem; }
+
+#search-results a:hover {
+  text-decoration: none; }
 
 #random-wiki {
   white-space: normal; }

@@ -2,6 +2,7 @@ function displaySearchField() {
   $('#search-icon').on('click', function() {
     $('#search-main').hide('slow');
     $('#search-text').show('slow');
+    $('#search-item').focus();
   });
 }
 
