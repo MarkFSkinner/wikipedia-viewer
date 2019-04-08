@@ -41,6 +41,9 @@ h4, p {
   margin-bottom: 0.625rem;
   padding: 0.625rem; }
 
+#search-text {
+  display: none; }
+
 #search-icon {
   max-width: 6.25rem;
   margin: auto;
