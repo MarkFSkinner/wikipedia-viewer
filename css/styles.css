@@ -2,22 +2,10 @@ body {
   background-color: #078898;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
 
-.btn-custom {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  background-color: #E37222;
-  color: #fff;
-  border-radius: 0rem; }
-
-.btn-custom:hover {
-  background-color: #EEAA7B;
-  cursor: pointer; }
-
 .container {
-  margin-top: 1.875rem;
-  margin-bottom: 1.875rem;
   max-width: 100%;
-  /*height: 500px;
-  height: 100%;*/ }
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem; }
 
 #wiki-container {
   border: 0.125rem solid #078898;
@@ -31,14 +19,23 @@ body {
   margin-right: auto;
   padding: 0.625rem; }
 
-h1 {
-  color: #078898;
-  font-size: 3.5rem; }
+#random-wiki {
+  white-space: normal; }
+
+.btn-custom {
+  border-radius: 0rem;
+  background-color: #E37222;
+  color: #fff;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+
+.btn-custom:hover {
+  background-color: #EEAA7B;
+  cursor: pointer; }
 
 h3 {
+  color: #f2f2f2;
   font-size: 1.25rem;
-  margin-bottom: 1.875rem;
-  color: #f2f2f2; }
+  margin-bottom: 1.875rem; }
 
 h4 {
   font-weight: bold; }
@@ -46,9 +43,6 @@ h4 {
 h4, p {
   text-align: left; }
 
-/*#search-main {
-  height: 12.5rem;
-}*/
 #search-main, #search-text {
   margin-top: 3.125rem;
   margin-bottom: 0.625rem;
@@ -58,39 +52,42 @@ h4, p {
   display: none; }
 
 #search-icon {
-  font-size: 6rem;
   color: #E37222;
-  /*border: 1px solid red;*/
+  font-size: 6rem;
   margin-bottom: 3.5rem; }
 
 #search-icon:hover {
   font-size: 6.5rem;
-  cursor: pointer;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  cursor: pointer; }
 
-@media screen and (max-width: 360px) {
-  #search-box {
-    margin-bottom: 10px; } }
+#search-box {
+  margin-bottom: 0.625rem; }
+
 #search-item {
-  margin-right: 0.3125rem;
-  color: #404040; }
+  color: #404040;
+  margin-right: 0.3125rem; }
 
 #search-clear {
-  font-size: 0.875rem;
   color: #ccc;
-  cursor: pointer;
+  font-size: 0.875rem;
   position: absolute;
   right: 0.8rem;
   top: 0;
   bottom: 0;
   height: 0.875rem;
   margin: auto;
-  padding-right: 5px; }
+  padding-right: 0.3125rem;
+  cursor: pointer; }
+
+#submit {
+  margin-bottom: 0.625rem;
+  cursor: pointer; }
 
 .results {
-  margin-top: 0.3125rem;
   background-color: #f2f2f2;
   color: #404040;
+  margin-top: 0.3125rem;
   padding: 1.5rem 2rem 1rem 2rem; }
 
 .results:hover {
@@ -99,33 +96,5 @@ h4, p {
 
 #search-results a:hover {
   text-decoration: none; }
-
-#random-wiki {
-  white-space: normal; }
-
-/*#wiki-box {
-  border: 3px dotted $primary-color;
-  border-radius: 5px;
-  height: 200px;
-  margin-bottom: 10px;
-  padding: 10px;
-  margin-top: 50px;
-}*/
-/*#search-box {
-  width: 12.81rem;
-  margin: auto;
-  border: 1px dotted red;
-}*/
-/*.extra-height {
-  height: 62.5rem;
-}
-
-@media screen and (max-width: 575px) {
-    .extra-height {
-      height: 93.75rem;
-    }
-}*/
-#submit {
-  cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */

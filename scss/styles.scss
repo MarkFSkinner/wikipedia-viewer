@@ -1,4 +1,3 @@
-//$primary-color: #1b95e0;
 $primary-color: #078898;
 $secondary-color: #66B9BF;
 $complementary-color: #EEAA7B;
@@ -9,26 +8,10 @@ body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-.btn-custom {
-   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-   background-color: $accent-color;
-   color: #fff;
-   border-radius: 0rem;
-}
-
-.btn-custom:hover {
-  background-color: $complementary-color;
-  cursor: pointer;
-}
-
 .container {
-  //background-color: #fff;
+  max-width: 100%;
   margin-top: 1.875rem;
   margin-bottom: 1.875rem;
-  max-width: 100%;
-  //max-width: 1080px;
-  /*height: 500px;
-  height: 100%;*/
 }
 
 #wiki-container {
@@ -44,16 +27,26 @@ body {
   padding: 0.625rem;
 }
 
-h1 {
-  color: $primary-color;
-  font-size: 3.5rem;
+#random-wiki {
+  white-space: normal;
+}
+
+.btn-custom {
+  border-radius: 0rem;
+  background-color: $accent-color;
+  color: #fff;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.btn-custom:hover {
+  background-color: $complementary-color;
+  cursor: pointer;
 }
 
 h3 {
-  font-size: 1.25rem;
-  //margin-top: 3.5rem;
-  margin-bottom: 1.875rem;
   color: hsl(0, 0%, 95%);
+  font-size: 1.25rem;
+  margin-bottom: 1.875rem;
 }
 
 h4 {
@@ -63,10 +56,6 @@ h4 {
 h4, p {
   text-align: left;
 }
-
-/*#search-main {
-  height: 12.5rem;
-}*/
 
 #search-main, #search-text {
   margin-top: 3.125rem;
@@ -79,51 +68,48 @@ h4, p {
 }
 
 #search-icon {
-  font-size: 6rem;
   color: $accent-color;
-  //max-width: 6.25rem;
-  //margin: auto;
-  //cursor: pointer;
-  /*border: 1px solid red;*/
+  font-size: 6rem;
   margin-bottom: 3.5rem;
 }
 
 #search-icon:hover {
   font-size: 6.5rem;
-  cursor: pointer;
   margin-bottom: 3rem;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 360px) {
-  #search-box {
-    margin-bottom: 10px;
-  }
+#search-box {
+  margin-bottom: 0.625rem;
 }
 
 #search-item {
-  margin-right: 0.3125rem;
-  //width: 12.5rem;
   color: hsl(0, 0%, 25%);
+  margin-right: 0.3125rem;
 }
 
 #search-clear {
-  font-size: 0.875rem;
   color: #ccc;
-  cursor: pointer;
+  font-size: 0.875rem;
   position: absolute;
   right: 0.8rem;
   top: 0;
   bottom: 0;
   height: 0.875rem;
   margin: auto;
-  padding-right: 5px;
+  padding-right: 0.3125rem;
+  cursor: pointer;
+}
+
+#submit {
+  margin-bottom: 0.625rem;
+  cursor: pointer;
 }
 
 .results {
-  //border: 0.0625rem solid $primary-color;
-  margin-top: 0.3125rem;
   background-color: hsl(0, 0%, 95%);
   color: hsl(0, 0%, 25%);
+  margin-top: 0.3125rem;
   padding: 1.5rem 2rem 1rem 2rem;
 }
 
@@ -134,42 +120,4 @@ h4, p {
 
 #search-results a:hover {
   text-decoration: none;
-}
-
-#random-wiki {
-  white-space: normal;
-}
-
-
-
-
-
-/*#wiki-box {
-  border: 3px dotted $primary-color;
-  border-radius: 5px;
-  height: 200px;
-  margin-bottom: 10px;
-  padding: 10px;
-  margin-top: 50px;
-}*/
-
-/*#search-box {
-  width: 12.81rem;
-  margin: auto;
-  border: 1px dotted red;
-}*/
-
-/*.extra-height {
-  height: 62.5rem;
-}
-
-@media screen and (max-width: 575px) {
-    .extra-height {
-      height: 93.75rem;
-    }
-}*/
-
-
-#submit {
-  cursor: pointer;
 }
