@@ -18,8 +18,9 @@ $(function() {
       $('#search-main').show('slow');
     } else {
        $("#search-item").val('');
+       $("#search-item").focus();
     }
-});
+  });
   $('#submit').on('click', function() {
     //console.log("Hello");
     $('.container').addClass('extra-height');
@@ -55,5 +56,12 @@ $(function() {
       }
       $('#search-results').show('slow');
     })
+  });
+
+  $("#search-item").on('keyup', function (e) {
+    if (e.keyCode === 13) {
+      event.preventDefault();
+      $('#submit').click();
+    }
   });
 })
